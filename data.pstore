@@ -1,2 +1,3 @@
-{:last_fileI"example.txt:ET:	key1I"	123 ;T:	key2I"456;T:	key3I"789;TI"key;TI"
-value;T:keyI"190;TI"	name;TI"maksim;TI"	tree;TI"bereza;T
+{:last_fileI"example.txt:ET:	key1I"	123 ;T:	key2I"456;T:	key3I"789;TI"key;TI"
+value;T:keyI"190;TI"	name;TI"maksim;TI"	tree;TI"bereza;TI"myname;TI"
+anton;TI"age;TI"21;TI"weight;TI"21;T

@@ -12,7 +12,7 @@ Cuba.define do
   store = PStore.new('data.pstore')
   on get do
     on root do
-      res.write 'About'
+      res.write 'Home'
     end
 
     on 'get/:key' do |key|
@@ -22,12 +22,15 @@ Cuba.define do
         res.write 'not found'
       end
     end
+  end
 
-    on 'set/:key/:value' do |key, value|
-      store.transaction do
-        store[key] = value
+  on post do
+    on 'set' do
+      on param('key'), param('value') do |key, value|
+        store.transaction do
+          store[key] = value
+        end
       end
-      res.write 'accepted'
     end
   end
 end
